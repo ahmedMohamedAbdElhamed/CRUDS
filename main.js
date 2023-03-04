@@ -207,7 +207,7 @@ function cancelNow() {
 // 3-7) Sold Function {}
 function soldItems(i){
     let soldInput = document.getElementById(`${i}`)
-    newProduct[i-1].prodCount = newProduct[i-1].prodCount -soldInput.value;
+    newProduct[i].prodCount = newProduct[i].prodCount -soldInput.value;
     localStorage.setItem('product', JSON.stringify(newProduct));
     readData();
 }
